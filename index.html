@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha (Tic-tac-toe)</title>
+</head>
+<body>
+    <section class="game-infos">
+        <div class="player1">
+            <label for="player1Input">Jogador 1: </label>
+            <input type="text" id="player1Input">
+            <label for="player1Input"><strong>X</strong></label>
+        </div>
+        <div class="player2">
+            <label for="player2Input">Jogador 2: </label>
+            <input type="text" id="player2Input">
+            <label for="player1Input"><strong>O</strong></label>
+        </div>
+        <button id="btnStart">Começar</button>
+    </section>
+    <p id="playerTurn"></p>
+    <div class="background-board">
+        <div class="board">
+            <button id="area1"></button>
+            <button id="area2"></button>
+            <button id="area3"></button>
+            <button id="area4"></button>
+            <button id="area5"></button>
+            <button id="area6"></button>
+            <button id="area7"></button>
+            <button id="area8"></button>
+            <button id="area9"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
