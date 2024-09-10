@@ -7,6 +7,12 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+:root {
+    --color-background: beige;
+    --color-grid: rgb(182, 182, 163);
+    --color-font: rgb(141, 141, 126);
+}
+
 .game-infos {
     display: flex;
     flex-direction: column;
@@ -27,7 +33,7 @@
 }
 
 .background-board {
-    background-color: beige;
+    background-color: var(--color-background);
     padding: 100px;
     margin-top: 50px;
 }
@@ -36,7 +42,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 7px;
-    background-color: rgb(182, 182, 163);
+    background-color: var(--color-grid);
     width: fit-content;
     margin: auto;
 }
@@ -44,9 +50,9 @@
 .board button {
     width: 125px;
     height: 125px;
-    background-color: beige;
+    background-color: var(--color-background);
     border: none;
     cursor: pointer;
     font-size: 100px;
-    color: rgb(141, 141, 126);
+    color: var(--color-font);
 }
